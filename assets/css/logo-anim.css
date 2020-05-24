@@ -1,0 +1,32 @@
+.title {
+  width: 13ch;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid transparent;
+  animation: flashing-border 0.75s ease infinite, printed-text 5s ease;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0;
+  }
+}
+
